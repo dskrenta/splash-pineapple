@@ -1,24 +1,35 @@
 <splash>
+  <div class="content">
+    slideshow stuff
+  </div>
   <div class="center">
     <span>T</span>
     <img class="animated bounce" src="../pineapple-splash.png" />
     <span>PIX</span>
   </div>
 
-  <style scoped>
-    :scope {
-      width: 100vw;
-      height: 100vh;
-    }
-
+  <style>
     .center {
-      margin: 0 auto;
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
     }
 
     span {
       font-size: 100px;
       font-family: sans-serif;
       font-weight: 900;
+    }
+
+    .content {
+      animation-duration: 4s;
+      animation-name: fadeIn;
+    }
+
+    @keyframes fadeIn {
+      0%, 50% {opacity: 0;}
+      100% {opacity: 1;}
     }
 
     .animated {
