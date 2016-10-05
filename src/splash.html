@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Topix Splash</title>
+    <link href="styles/animate.css" rel="stylesheet" type="text/css"/>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        background: linear-gradient(270deg, #2800ff, #ff0000);
+        background-size: 400% 400%;
+
+        -webkit-animation: gradient 15s ease infinite;
+        -moz-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @-webkit-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+      @-moz-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+      @keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+
+      .topix {
+        position: relative;
+      }
+
+      .pineapple {
+        position: absolute;
+        top: 20px;
+        left: 145px;
+
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        animation-duration: 2s;
+      }
+
+      .logo-container {
+        position: relative;
+        
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        animation-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container animated bounceInUp">
+        <img class="topix" src="images/t_pix.png" />
+        <img class="pineapple animated bounce" src="images/pineapple.png" />
+      </div>
+    </div>
+  </body>
+</html>
