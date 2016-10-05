@@ -10,12 +10,12 @@
       }
 
       .container {
-        background: linear-gradient(270deg, #2800ff, #ff0000);
+        background: linear-gradient(270deg, #2e8b84, #167e76);
         background-size: 400% 400%;
 
-        -webkit-animation: gradient 15s ease infinite;
-        -moz-animation: gradient 15s ease infinite;
-        animation: gradient 15s ease infinite;
+        -webkit-animation: gradient 4s ease infinite;
+        -moz-animation: gradient 4s ease infinite;
+        animation: gradient 4s ease infinite;
 
         width: 100vw;
         height: 100vh;
@@ -61,7 +61,22 @@
 
       .logo-container {
         position: relative;
-        
+
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        animation-duration: 2s;
+      }
+
+      .fade-delay {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        overflow: hidden;
+
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        animation-delay: 3s;
+
         -webkit-animation-duration: 2s;
         -moz-animation-duration: 2s;
         animation-duration: 2s;
@@ -69,11 +84,16 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="logo-container animated bounceInUp">
-        <img class="topix" src="images/t_pix.png" />
-        <img class="pineapple animated bounce" src="images/pineapple.png" />
+    <div class="fade-delay animated fadeOut">
+      <div class="container">
+        <div class="logo-container animated bounceInUp">
+          <img class="topix" src="images/t_pix2.png" />
+          <img class="pineapple animated bounce" src="images/pineapple2.png" />
+        </div>
       </div>
+    </div>
+    <div class="fade-delay animated fadeIn">
+      <h1>DELAYED SITE FADE IN</h1>
     </div>
   </body>
 </html>
